@@ -8,11 +8,19 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background-color: #f2f2f24d;
 }
 
 button {
     background-color: none;
     border: none;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .banner {
@@ -72,4 +80,33 @@ button {
 }
 .dark:hover {
     background-color: rgba(5, 5, 5, 0.843)
+}
+
+.skills {
+    margin: 30px 0;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 48px;
+}
+
+.skillsbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 24px;
+    border: 0.5px solid rgba(211, 211, 211, 0.78);
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
 }
